@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-06-27" agent="Mozilla/5.0" version="24.0.0">
+  <diagram name="Payroll Program Flowchart" id="flowchart">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Start -->
+        <mxCell id="start" value="START" style="ellipse;whiteSpace=wrap;html=1;fillColor=#90EE90;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="325" y="20" width="100" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Welcome -->
+        <mxCell id="welcome" value="Welcome&#10;&quot;Welcome to my Weekly Payroll program!!&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="90" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Input Employee ID -->
+        <mxCell id="input1" value="Input: Employee ID" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#87CEEB;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Input Hours -->
+        <mxCell id="input2" value="Input: Hours Worked" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#87CEEB;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Input Hourly Rate -->
+        <mxCell id="input3" value="Input: Hourly Rate" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#87CEEB;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="360" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Input Withholding Rate -->
+        <mxCell id="input4" value="Input: Withholding Rate" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#87CEEB;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Do Calculations -->
+        <mxCell id="calc" value="Do Calculations&#10;grosspayUSD = hours * rate&#10;federalTax = grosspay * withholding&#10;netPay = grosspay - federalTax" style="rect;whiteSpace=wrap;html=1;fillColor=#DDA0DD;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="540" width="200" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Output Heading -->
+        <mxCell id="heading" value="Display: Payroll Summary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="650" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Output Gross Pay -->
+        <mxCell id="output1" value="Output: Gross Pay" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFB6C1;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="740" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Output Federal Tax -->
+        <mxCell id="output2" value="Output: Federal Tax Withholding" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFB6C1;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="830" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Output Net Pay -->
+        <mxCell id="output3" value="Output: Net Pay" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFB6C1;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="920" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Goodbye -->
+        <mxCell id="goodbye" value="Goodbye&#10;&quot;Thank you for using my Weekly Payroll program!!&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1010" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- End -->
+        <mxCell id="end" value="END" style="ellipse;whiteSpace=wrap;html=1;fillColor=#90EE90;strokeColor=#000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1110" width="100" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connectors -->
+        <mxCell id="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="start" target="welcome">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="welcome" target="input1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="input1" target="input2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="input2" target="input3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="input3" target="input4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="input4" target="calc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="calc" target="heading">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="heading" target="output1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="output1" target="output2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="output2" target="output3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="output3" target="goodbye">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="c12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="goodbye" target="end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
